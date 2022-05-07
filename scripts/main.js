@@ -116,8 +116,8 @@ async function main() {
   
     if(document.getElementById('main').innerHTML === "MINT") {
       const whitelistedAmount = await contract.getWhitelist(walletAddress);
-      if(Date.now() < 1652025600000) {
-        if(whitelistedAmount == true) {
+      if(whitelistedAmount == true) {
+        if(Date.now() < 1652025600000) {
           await freeMint();
           await getTotalSupply();
         }  
@@ -136,8 +136,8 @@ async function start() {
   getTotalSupply();
 
   const whitelistedAmount = await contract.getWhitelist(walletAddress);
-  if(Date.now() < 1652025600000) {
-    if(whitelistedAmount == true) {
+  if(whitelistedAmount == true) {
+    if(Date.now() < 1652025600000) {
       document.getElementById('cost').innerHTML = `You can mint 2 Sharguls for free!`;
       document.getElementById('amounttext').innerHTML = `click the button to start minting!`;
       $('#amounttext').removeClass('text-danger');
