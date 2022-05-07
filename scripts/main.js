@@ -133,7 +133,7 @@ async function main() {
 
 
 async function start() {
-  getTotalSupply();
+  await getTotalSupply();
 
   const whitelistedAmount = await contract.getWhitelist(walletAddress);
   if(whitelistedAmount == true) {
