@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sharguls Minting Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
+    </noscript>
+    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+  </head>
+  <body id="top"><div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+			<h3 class="masthead-brand">Sharguls</h3>
+          <nav class="nav nav-masthead">
+            <a class="nav-link nav-social" href="https://discord.gg/TZ6c3taEh2" title="Discord"><i class="fab fa-discord" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social" href="https://twitter.com/Sharguls_nft" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social" href="https://www.instagram.com/sharguls_nft/" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+ 		  </nav>
+
+      
+		  <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" id="connect" >Connect Wallet</button></p>
+        </div>
+      </div>      
+      <div class="inner cover">
+        <h1 class="cover-heading">MINT YOUR SHARGULS</h1>
+        <h2 class="text-white" id="totalSupply">Minted: 0/10000</h2>
+        <h4 class="text-white" id="cost" style="visibility: hidden">1 Shargul costs 5 MATIC</h4>
+        <h5 id="amounttext" style="visibility: hidden">you can mint: </h5>
+        <div class="form-group " style="visibility: hidden" id="amount">
+          <div class="col-md-2 mx-auto">
+            <input type="number" id="amountNumber" class="form-control" min="1" max="5" data-bind="value:replyNumber" />
+          </div>
+        </div>
+        <p class="lead"><button type="button" id="main" class="btn btn-lg btn-default btn-notify">CONNECT</button></p>
+      </div>
+      <div class="mastfoot">
+        <div class="inner">
+          <p>&copy; SHARGULS 2022: <a href="" target="">Sharguls NFT</a>
+		  <button class="btn btn-link" onclick="myFunction()">Legal Disclaimer</button></p>
+        </div>
+      </div>
+
+
+</div>
+    <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
+    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="scripts/main.js?ver=3.0.0" type="module"></script>
+
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.7.8/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.7/dist/index.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.6.5.umd.min.js" type="application/javascript"></script>
+    <!-- <script type="text/javascript" src="scripts/coinbase.bundle.js"></script> -->
+    <script type="text/javascript" src="scripts/wallet-sdk-bundle.js"></script>
+	<script>
+	function myFunction() {
+		alert("By accessing or continuing to use our website and related services, you agree to abide by these terms and conditions. If you do not agree with any of these terms, you should cease using our website and services. This website is owned and operated by Sharguls. All rights for operation and ownership herein belong to Sharguls. Sharguls owns the licensing rights to the brand, trademark, and collection. Sharguls also retains rights to marketing, advertising, production, and future works. Sharguls provides a service of “Minting” NFTs (Non-fungible Tokens) to site Users. Owners of an Sharguls token are granted non-exclusive rights to the use of the generated image. Token Owners may use the associated generated image as desired to include marketing and derivative products or merchandise. Ownership of each image can be transferred through the sale/purchase of the respective Token. The Sharguls name and logo remain the exclusive property of Sharguls.Sharguls makes no additional promises or warranties beyond the provision of the token. Any dependencies on the Ethereum blockchain or supporting interfaces remains the liability of the respective platform.");
+	}
+	</script>
+	
+  </body>
+</html>
