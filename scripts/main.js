@@ -78,7 +78,7 @@ async function getENS() {
 
 async function getTotalSupply() {
     const totalSupply = await infuraContract.totalSupply()
-    document.getElementById('totalSupply').innerHTML = `Minted: ${totalSupply}/10000`;
+    document.getElementById('totalSupply').innerHTML = `Minted: ${totalSupply}/3333`;
   }
 
   async function mint() {
